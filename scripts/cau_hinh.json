@@ -1,0 +1,9 @@
+{
+  "danh_muc": "hanh-chinh-cong",
+  "shared_cho_tat_ca": ["nguyen-tac-chung.md", "quy-dinh-cong-vu-2026.md"],
+  "shared_theo_skill": {
+    "the-thuc-nd30.md": ["soan-van-ban-nha-nuoc", "van-ban-quy-pham-phap-luat", "kiem-tra-van-ban", "van-thu-co-quan", "bao-cao-ke-hoach", "mot-cua-tthc", "tiep-dan-khieu-nai-to-cao", "thi-dua-khen-thuong", "hop-hoi-nghi-phat-bieu", "lap-ho-so-luu-tru"],
+    "the-thuc-van-ban-dang.md": ["van-ban-dang", "kiem-tra-van-ban", "van-thu-co-quan", "danh-gia-can-bo", "hop-hoi-nghi-phat-bieu", "bao-cao-ke-hoach"]
+  },
+  "skill_dung_cong_cu": ["soan-van-ban-nha-nuoc", "van-ban-dang", "van-ban-quy-pham-phap-luat", "kiem-tra-van-ban", "van-thu-co-quan", "lap-ho-so-luu-tru", "bao-cao-ke-hoach", "mot-cua-tthc", "tiep-dan-khieu-nai-to-cao", "danh-gia-can-bo", "thi-dua-khen-thuong", "hop-hoi-nghi-phat-bieu"]
+}

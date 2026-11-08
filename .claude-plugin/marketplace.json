@@ -1,0 +1,88 @@
+{
+  "name": "hanh-chinh-cong",
+  "description": "Plugin Hành chính công cho cán bộ, công chức, viên chức Việt Nam 2026 (chính quyền 2 cấp): văn bản hành chính đúng NĐ 30/2020, văn bản Đảng theo Quy định 399-QĐ/TW và Hướng dẫn 05-HD/VPTW, văn bản quy phạm pháp luật cấp xã/tỉnh, kiểm tra thể thức, văn thư – văn bản điện tử, lập hồ sơ lưu trữ, báo cáo – kế hoạch theo kỳ NĐ 09/2019, một cửa theo NĐ 118/2025, tiếp công dân – khiếu nại – tố cáo (sửa đổi 2025), đánh giá cán bộ – kiểm điểm đảng viên, thi đua khen thưởng NĐ 152/2025, hội nghị – bài phát biểu. Kèm MCP server: hạn TTHC, hạn khiếu nại tố cáo, kỳ báo cáo, sổ văn bản chính quyền/Đảng, tạo – kiểm tra .docx.",
+  "owner": {
+    "name": "nguyenvansuai",
+    "url": "https://github.com/nguyenvansuai"
+  },
+  "plugins": [
+    {
+      "name": "hanh-chinh-cong",
+      "source": "./",
+      "description": "TRỌN BỘ plugin: Plugin Hành chính công cho cán bộ, công chức, viên chức Việt Nam 2026 (chính quyền 2 cấp): văn bản hành chính đúng NĐ 30/2020, văn bản Đảng theo Quy định 399-QĐ/TW và Hướng dẫn 05-HD/VPTW, văn bản quy phạm pháp luật cấp xã/tỉnh, kiểm tra thể thức, văn thư – văn bản điện tử, lập hồ sơ lưu trữ, báo cáo – kế hoạch theo kỳ NĐ 09/2019, một cửa theo NĐ 118/2025, tiếp công dân – khiếu nại – tố cáo (sửa đổi 2025), đánh giá cán bộ – kiểm điểm đảng viên, thi đua khen thưởng NĐ 152/2025, hội nghị – bài phát biểu. Kèm MCP server: hạn TTHC, hạn khiếu nại tố cáo, kỳ báo cáo, sổ văn bản chính quyền/Đảng, tạo – kiểm tra .docx.",
+      "category": "hanh-chinh-cong"
+    },
+    {
+      "name": "bao-cao-ke-hoach",
+      "source": "./skills/bao-cao-ke-hoach",
+      "description": "Soạn báo cáo và kế hoạch cho cơ quan nhà nước, đảng ủy, đơn vị sự nghiệp — báo cáo định kỳ tháng/quý/6 tháng/năm với kỳ chốt số liệu theo Nghị định 09/2019 (15/12 năm trước đến 14/12), báo cáo chuyên đề, báo cáo sơ kết, tổng kết, báo cáo đột xuất, báo cáo kết quả thực hiện nghị quyết; kế hoạch năm, chương trình công tác, kế hoạch triển khai văn bản cấp trên; tổng hợp số liệu từ nhiều đơn vị (Excel), so sánh kế hoạch – cùng kỳ, phân tích nguyên nhân chủ quan/khách quan, phương hướng có chỉ tiêu, kiến nghị cụ thể; tránh văn phong sáo rỗng. Dùng khi người dùng nói \"viết báo cáo 6 tháng\", \"báo cáo tổng kết năm\", \"báo cáo sơ kết\", \"kế hoạch năm 2027\", \"chương trình công tác\", \"tổng hợp số liệu báo cáo\", \"kỳ chốt số liệu báo cáo năm\".",
+      "category": "hanh-chinh-cong"
+    },
+    {
+      "name": "danh-gia-can-bo",
+      "source": "./skills/danh-gia-can-bo",
+      "description": "Hỗ trợ đánh giá, xếp loại chất lượng cán bộ, công chức, viên chức và kiểm điểm tự phê bình đảng viên cuối năm — bản tự đánh giá theo tiêu chí chung (chính trị tư tưởng, đạo đức lối sống, tác phong, ý thức tổ chức kỷ luật) và kết quả thực hiện nhiệm vụ có sản phẩm, số liệu; mức xếp loại (hoàn thành xuất sắc, tốt, hoàn thành, không hoàn thành nhiệm vụ) và tỷ lệ khống chế; nhận xét của người quản lý; biên bản họp đánh giá; bản kiểm điểm cá nhân đảng viên (ưu điểm, hạn chế, nguyên nhân, kết quả khắc phục hạn chế năm trước, giải trình vấn đề được gợi ý, phương hướng); kiểm điểm tập thể; theo dõi xu hướng đánh giá theo KPI theo tháng/quý. Dùng khi người dùng nói \"viết bản tự đánh giá cuối năm\", \"bản kiểm điểm đảng viên\", \"phiếu đánh giá xếp loại công chức\", \"nhận xét đánh giá cán bộ\", \"kiểm điểm tập thể chi bộ\", \"biên bản họp đánh giá xếp loại\", \"xây dựng KPI cho công chức\".",
+      "category": "hanh-chinh-cong"
+    },
+    {
+      "name": "hop-hoi-nghi-phat-bieu",
+      "source": "./skills/hop-hoi-nghi-phat-bieu",
+      "description": "Tổ chức cuộc họp, hội nghị trong cơ quan nhà nước và tổ chức Đảng, và soạn bài phát biểu cho lãnh đạo — chương trình, giấy mời, kịch bản điều hành (người dẫn chương trình), tài liệu hội nghị, biên bản họp, thông báo kết luận cuộc họp (giao việc cụ thể, thời hạn), hội nghị cán bộ công chức viên chức đầu năm, hội nghị sơ kết/tổng kết, đại hội chi bộ (hậu cần, kịch bản); bài phát biểu khai mạc, bế mạc, chỉ đạo, chúc mừng, phát biểu tại lễ kỷ niệm ngày truyền thống, gặp mặt đầu xuân, đón nhận danh hiệu; đúng thời lượng, xưng hô nghi thức (\"Kính thưa các đồng chí...\"), số liệu thật, không sáo rỗng. Dùng khi người dùng nói \"viết bài phát biểu khai mạc\", \"diễn văn kỷ niệm\", \"kịch bản hội nghị\", \"thông báo kết luận cuộc họp\", \"biên bản họp\", \"chương trình hội nghị tổng kết\", \"phát biểu chỉ đạo của chủ tịch\", \"hội nghị cán bộ công chức\".",
+      "category": "hanh-chinh-cong"
+    },
+    {
+      "name": "kiem-tra-van-ban",
+      "source": "./skills/kiem-tra-van-ban",
+      "description": "Kiểm tra văn bản trước khi trình ký hoặc phát hành tại cơ quan nhà nước và tổ chức Đảng — chạy công cụ rà thể thức trên file Word hoặc nội dung dán vào theo Nghị định 30/2020 hoặc Quy định 399-QĐ/TW và Hướng dẫn 05-HD/VPTW (Quốc hiệu/tiêu đề Đảng, số ký hiệu, ngày tháng có số 0, TM./KT. hay T/M, K/T, nơi nhận, ./., lề, phông, cỡ chữ), rồi soát nội dung: thẩm quyền ký, căn cứ còn hiệu lực sau các luật 2025, tên cơ quan sau hợp nhất (Sở LĐTBXH, Sở KH&ĐT, UBND huyện), địa danh theo đơn vị hành chính mới, số liệu, mâu thuẫn ngày hiệu lực, viết hoa theo Phụ lục II NĐ 30; báo lỗi 3 mức CHẶN / CẦN SỬA / GỢI Ý, không sửa file gốc. Dùng khi người dùng nói \"kiểm tra văn bản\", \"rà thể thức\", \"soát trước khi trình ký\", \"văn bản Đảng này đúng thể thức chưa\", \"check quyết định của UBND\", \"thẩm định thể thức\".",
+      "category": "hanh-chinh-cong"
+    },
+    {
+      "name": "lap-ho-so-luu-tru",
+      "source": "./skills/lap-ho-so-luu-tru",
+      "description": "Lập hồ sơ công việc và nộp lưu vào lưu trữ cơ quan theo Nghị định 30/2020 và Luật Lưu trữ 2024 (hiệu lực 01/7/2025) — xây dựng danh mục hồ sơ năm của cơ quan, mã hồ sơ, thời hạn bảo quản (vĩnh viễn, có thời hạn theo bảng thời hạn bảo quản hồ sơ, tài liệu chung và chuyên ngành), mở – cập nhật – kết thúc hồ sơ, sắp xếp văn bản trong hồ sơ, mục lục văn bản, biên mục hồ sơ, nộp lưu (thời hạn, mục lục hồ sơ nộp lưu, biên bản giao nhận), hồ sơ điện tử, số hóa, xác định giá trị và tiêu hủy tài liệu hết giá trị, bàn giao hồ sơ khi sắp xếp tổ chức bộ máy, sáp nhập đơn vị hành chính. Dùng khi người dùng nói \"lập danh mục hồ sơ\", \"lập hồ sơ công việc\", \"nộp lưu hồ sơ\", \"thời hạn bảo quản hồ sơ\", \"biên bản giao nhận tài liệu lưu trữ\", \"tiêu hủy tài liệu hết giá trị\", \"bàn giao hồ sơ khi sáp nhập xã\".",
+      "category": "hanh-chinh-cong"
+    },
+    {
+      "name": "mot-cua-tthc",
+      "source": "./skills/mot-cua-tthc",
+      "description": "Hỗ trợ cán bộ Bộ phận Một cửa, Trung tâm Phục vụ hành chính công cấp tỉnh, cấp xã theo Nghị định 118/2025/NĐ-CP (sửa đổi bởi NĐ 367/2025) — hướng dẫn tổ chức, công dân chuẩn bị hồ sơ đúng thủ tục đã công bố, kiểm tra thành phần hồ sơ, phiếu yêu cầu bổ sung (nêu đầy đủ một lần), phiếu từ chối tiếp nhận có lý do, giấy tiếp nhận và hẹn trả kết quả (tính đúng ngày làm việc trừ lễ Tết), theo dõi hồ sơ sắp/quá hạn, văn bản xin lỗi và hẹn lại khi trễ hạn, trả lời phản ánh kiến nghị, dịch vụ công trực tuyến và tái sử dụng dữ liệu (không yêu cầu nộp lại giấy tờ đã có trong cơ sở dữ liệu), ngôn ngữ giao tiếp thân thiện. Dùng khi người dùng nói \"hướng dẫn hồ sơ thủ tục\", \"tính ngày hẹn trả kết quả\", \"hồ sơ trễ hạn xin lỗi thế nào\", \"phiếu yêu cầu bổ sung hồ sơ\", \"từ chối tiếp nhận hồ sơ\", \"trả lời công dân\", \"bộ phận một cửa\".",
+      "category": "hanh-chinh-cong"
+    },
+    {
+      "name": "soan-van-ban-nha-nuoc",
+      "source": "./skills/soan-van-ban-nha-nuoc",
+      "description": "Soạn văn bản hành chính của cơ quan nhà nước, UBND xã/phường/đặc khu, sở ngành, đơn vị sự nghiệp công lập đúng Nghị định 30/2020/NĐ-CP trong mô hình chính quyền 2 cấp — công văn (đề nghị, đôn đốc, hướng dẫn, phúc đáp, xin ý kiến), quyết định cá biệt (giao nhiệm vụ, thành lập ban chỉ đạo/tổ công tác, kiện toàn, phê duyệt, ban hành quy chế), thông báo (kết luận, lịch công tác), kế hoạch, tờ trình, báo cáo, giấy mời, giấy giới thiệu; thẩm quyền ký TM. UBND, KT. CHỦ TỊCH, TL., TUQ.; tên cơ quan sau hợp nhất; xuất Word chuẩn và cấp số sau khi ký. Dùng khi người dùng nói \"soạn công văn của UBND xã\", \"dự thảo quyết định thành lập tổ công tác\", \"kế hoạch triển khai\", \"thông báo kết luận\", \"tờ trình UBND\", \"công văn gửi Sở\", \"quyết định kiện toàn ban chỉ đạo\".",
+      "category": "hanh-chinh-cong"
+    },
+    {
+      "name": "thi-dua-khen-thuong",
+      "source": "./skills/thi-dua-khen-thuong",
+      "description": "Hỗ trợ công tác thi đua, khen thưởng ở cơ quan, đơn vị, UBND cấp xã theo Luật Thi đua, khen thưởng 2022 và Nghị định 152/2025/NĐ-CP (hiệu lực 01/7/2025, thay Nghị định 98/2023) — kế hoạch phát động phong trào thi đua, đăng ký thi đua, quy chế thi đua khen thưởng của đơn vị, xét danh hiệu (Lao động tiên tiến, Chiến sĩ thi đua cơ sở, Tập thể lao động xuất sắc...) và hình thức khen thưởng (giấy khen, bằng khen), hồ sơ đề nghị (tờ trình, biên bản họp hội đồng thi đua – khen thưởng, báo cáo thành tích cá nhân/tập thể có số liệu, minh chứng sáng kiến), khen thưởng đột xuất, chuyên đề, quyết định khen thưởng, tiền thưởng tính theo lương cơ sở (2.530.000 đồng từ 01/7/2026). Dùng khi người dùng nói \"viết báo cáo thành tích\", \"hồ sơ đề nghị khen thưởng\", \"biên bản họp hội đồng thi đua\", \"quyết định tặng giấy khen\", \"kế hoạch phát động thi đua\", \"quy chế thi đua khen thưởng\", \"xét chiến sĩ thi đua cơ sở\".",
+      "category": "hanh-chinh-cong"
+    },
+    {
+      "name": "tiep-dan-khieu-nai-to-cao",
+      "source": "./skills/tiep-dan-khieu-nai-to-cao",
+      "description": "Hỗ trợ công tác tiếp công dân, xử lý đơn và giải quyết khiếu nại, tố cáo, kiến nghị phản ánh tại cơ quan hành chính nhà nước, nhất là UBND cấp xã — phân loại đơn (khiếu nại, tố cáo, kiến nghị phản ánh, đơn có nhiều nội dung, đơn trùng, đơn không đủ điều kiện), xác định thẩm quyền sau sắp xếp chính quyền 2 cấp, tính hạn thụ lý và hạn giải quyết theo Luật sửa đổi số 136/2025/QH15 (hiệu lực 01/7/2026) hoặc quy định trước đó, soạn phiếu chuyển đơn, văn bản hướng dẫn, thông báo thụ lý/không thụ lý, biên bản làm việc, biên bản đối thoại, quyết định giải quyết khiếu nại, kết luận nội dung tố cáo, sổ tiếp công dân, bảo vệ thông tin người tố cáo. Dùng khi người dùng nói \"xử lý đơn khiếu nại\", \"đơn tố cáo\", \"thời hạn giải quyết khiếu nại\", \"thông báo thụ lý\", \"quyết định giải quyết khiếu nại lần đầu\", \"kết luận tố cáo\", \"tiếp công dân\", \"đơn kiến nghị phản ánh\".",
+      "category": "hanh-chinh-cong"
+    },
+    {
+      "name": "van-ban-dang",
+      "source": "./skills/van-ban-dang",
+      "description": "Soạn văn bản của tổ chức Đảng đúng Quy định 399-QĐ/TW (09/01/2026) và Hướng dẫn 05-HD/VPTW (27/5/2026) về thể loại, thẩm quyền, thể thức và kỹ thuật trình bày — nghị quyết, quyết định, kết luận, chỉ thị, quy chế, kế hoạch, chương trình, báo cáo, tờ trình, thông báo, hướng dẫn, công văn, biên bản của đảng ủy xã/phường/cơ quan, chi bộ, ban thường vụ; tiêu đề \"ĐẢNG CỘNG SẢN VIỆT NAM\", dấu sao, số ký hiệu \"Số 15-NQ/ĐU\", thể thức đề ký T/M, K/T, T/L, nơi nhận \"Lưu Văn phòng\"; nghị quyết chi bộ hằng tháng, báo cáo kết quả lãnh đạo năm, nghị quyết đại hội chi bộ; xuất Word và cấp số theo sổ văn bản Đảng. Dùng khi người dùng nói \"soạn nghị quyết chi bộ\", \"văn bản đảng ủy\", \"báo cáo của đảng ủy\", \"thể thức văn bản Đảng\", \"nghị quyết tháng chi bộ\", \"kết luận của ban thường vụ\", \"công văn của đảng ủy\".",
+      "category": "hanh-chinh-cong"
+    },
+    {
+      "name": "van-ban-quy-pham-phap-luat",
+      "source": "./skills/van-ban-quy-pham-phap-luat",
+      "description": "Hỗ trợ xây dựng văn bản quy phạm pháp luật của chính quyền địa phương (nghị quyết HĐND, quyết định của UBND cấp tỉnh, cấp xã) theo Luật Ban hành văn bản quy phạm pháp luật 2025 — phân biệt văn bản quy phạm với văn bản cá biệt, xác định thẩm quyền và nội dung được giao quy định chi tiết, quy trình (đề nghị/xây dựng dự thảo, lấy ý kiến đối tượng chịu tác động, thẩm định/ kiểm tra, trình, thông qua, công bố, đăng công báo, gửi kiểm tra), kỹ thuật trình bày chương – mục – điều – khoản – điểm, điều khoản thi hành và chuyển tiếp, tờ trình, báo cáo tổng hợp tiếp thu giải trình ý kiến, rà soát văn bản hết hiệu lực sau sắp xếp đơn vị hành chính. Dùng khi người dùng nói \"dự thảo nghị quyết HĐND\", \"quyết định quy phạm của UBND\", \"quy trình ban hành văn bản quy phạm\", \"báo cáo tiếp thu giải trình\", \"rà soát văn bản quy phạm sau sáp nhập\", \"kỹ thuật soạn điều khoản\".",
+      "category": "hanh-chinh-cong"
+    },
+    {
+      "name": "van-thu-co-quan",
+      "source": "./skills/van-thu-co-quan",
+      "description": "Nghiệp vụ văn thư cơ quan nhà nước và văn phòng cấp ủy theo Nghị định 30/2020 và Quy định 399-QĐ/TW — tiếp nhận, đăng ký văn bản đến (giấy, điện tử, qua trục liên thông), trình phân phối, giao xử lý, tính hạn xử lý theo ngày làm việc, nhắc văn bản quá hạn; cấp số văn bản đi sau khi ký (sổ chính quyền \"Số: 01/QĐ-UBND\" và sổ Đảng \"Số 01-NQ/ĐU\" riêng), phát hành văn bản điện tử ký số (chữ ký số người có thẩm quyền và của cơ quan), thu hồi – đính chính văn bản, bản sao (sao y, sao lục, trích sao, sao điện tử), quản lý con dấu và thiết bị lưu khóa bí mật; mẫu sổ, mẫu phiếu. Dùng khi người dùng nói \"vào sổ công văn đến\", \"cấp số văn bản\", \"văn bản nào quá hạn\", \"phát hành văn bản điện tử\", \"sao y bản chính\", \"đính chính văn bản đã ban hành\", \"thu hồi văn bản\".",
+      "category": "hanh-chinh-cong"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "hanh-chinh-cong",
+  "version": "1.0.0",
+  "description": "Plugin Hành chính công cho cán bộ, công chức, viên chức Việt Nam 2026 (chính quyền 2 cấp): văn bản hành chính đúng NĐ 30/2020, văn bản Đảng theo Quy định 399-QĐ/TW và Hướng dẫn 05-HD/VPTW, văn bản quy phạm pháp luật cấp xã/tỉnh, kiểm tra thể thức, văn thư – văn bản điện tử, lập hồ sơ lưu trữ, báo cáo – kế hoạch theo kỳ NĐ 09/2019, một cửa theo NĐ 118/2025, tiếp công dân – khiếu nại – tố cáo (sửa đổi 2025), đánh giá cán bộ – kiểm điểm đảng viên, thi đua khen thưởng NĐ 152/2025, hội nghị – bài phát biểu. Kèm MCP server: hạn TTHC, hạn khiếu nại tố cáo, kỳ báo cáo, sổ văn bản chính quyền/Đảng, tạo – kiểm tra .docx.",
+  "author": {"name": "nguyenvansuai", "url": "https://github.com/nguyenvansuai"},
+  "homepage": "https://github.com/nguyenvansuai/hanh-chinh-cong",
+  "repository": "https://github.com/nguyenvansuai/hanh-chinh-cong",
+  "license": "MIT",
+  "keywords": ["hanh-chinh-cong", "can-bo-cong-chuc", "van-ban-dang", "nd-30-2020", "mot-cua", "khieu-nai-to-cao", "thi-dua-khen-thuong", "viet-nam"]
+}
