@@ -1,0 +1,20 @@
+{
+  "name": "hanh-chinh-cong",
+  "interface": {
+    "displayName": "Hành chính công VN"
+  },
+  "plugins": [
+    {
+      "name": "hanh-chinh-cong",
+      "source": {
+        "source": "local",
+        "path": "./openai/hanh-chinh-cong"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

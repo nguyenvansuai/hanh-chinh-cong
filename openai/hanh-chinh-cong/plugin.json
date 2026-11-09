@@ -1,0 +1,42 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "hanh-chinh-cong",
+  "version": "1.0.0",
+  "description": "Văn bản nhà nước NĐ 30, văn bản Đảng QĐ 399, một cửa, khiếu nại tố cáo, thi đua khen thưởng.",
+  "author": {
+    "name": "nguyenvansuai",
+    "url": "https://github.com/nguyenvansuai"
+  },
+  "homepage": "https://github.com/nguyenvansuai/hanh-chinh-cong",
+  "repository": "https://github.com/nguyenvansuai/hanh-chinh-cong",
+  "license": "MIT",
+  "keywords": [
+    "hanh-chinh-cong",
+    "van-ban-dang",
+    "viet-nam"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Hành chính công VN",
+        "shortDescription": "Văn bản nhà nước NĐ 30, văn bản Đảng QĐ 399, một cửa, khiếu nại tố cáo, thi đua khen thưởng.",
+        "longDescription": "12 skill cho cán bộ, công chức, viên chức Việt Nam trong mô hình chính quyền 2 cấp: văn bản hành chính đúng NĐ 30/2020, văn bản Đảng theo Quy định 399-QĐ/TW và Hướng dẫn 05-HD/VPTW, văn bản quy phạm pháp luật, kiểm tra thể thức, văn thư – văn bản điện tử, lập hồ sơ lưu trữ, báo cáo – kế hoạch (kỳ chốt số liệu NĐ 09/2019), một cửa (NĐ 118/2025), tiếp công dân – khiếu nại – tố cáo (Luật 136/2025), đánh giá cán bộ – kiểm điểm đảng viên, thi đua khen thưởng (NĐ 152/2025), hội nghị – bài phát biểu. Không dùng với tài liệu mật.",
+        "developerName": "nguyenvansuai",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://github.com/nguyenvansuai/hanh-chinh-cong",
+        "defaultPrompt": [
+          "Soạn nghị quyết chi bộ tháng 12/2026 đúng thể thức văn bản Đảng.",
+          "Nhận hồ sơ ngày 12/02/2026, thủ tục 5 ngày làm việc. Hẹn trả kết quả ngày nào?",
+          "Viết bài phát biểu khai mạc hội nghị cán bộ công chức năm 2027, khoảng 7 phút."
+        ],
+        "brandColor": "#9B1C1C",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}

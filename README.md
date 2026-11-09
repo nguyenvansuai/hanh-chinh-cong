@@ -65,7 +65,29 @@ Cài từ file [`dist/hanh-chinh-cong.plugin`](dist/).
 ### Claude.ai – từng skill
 **Settings → Capabilities**: bật Code execution; **Skills → Upload skill** với file zip trong [`dist/`](dist/) (ví dụ `van-ban-dang.zip`).
 
-### ChatGPT
+### ChatGPT / Codex – cả bộ plugin (OpenAI)
+
+Gói plugin cho ChatGPT và Codex nằm ở [`openai/hanh-chinh-cong/`](openai/hanh-chinh-cong/), theo cấu trúc portable của OpenAI (`plugin.json`, `skills/`, `mcp.json`), gồm **19 skill** (lệnh quy trình và agent của bản Claude đã được chuyển thành skill).
+
+**ChatGPT desktop / Codex** – cài cá nhân, không cần OpenAI duyệt:
+
+```bash
+codex plugin marketplace add nguyenvansuai/hanh-chinh-cong
+```
+
+```bash
+codex plugin add hanh-chinh-cong@hanh-chinh-cong
+```
+
+Hoặc trong ứng dụng ChatGPT desktop: **Plugins** → chọn nguồn **Hành chính công VN** → **Install**. Khi dùng: mở chat chế độ **Work**, gõ `@` và chọn plugin.
+
+Gói kèm MCP server chạy trên máy (cần Python 3.8+) nên thuộc loại **chỉ dùng trên desktop**. Skill vẫn tự tính bằng `scripts/cong_cu.py` khi không có MCP.
+
+**ChatGPT web / chia sẻ rộng**: muốn plugin xuất hiện trong thư mục plugin chung của ChatGPT phải gửi OpenAI duyệt qua [cổng nộp plugin](https://platform.openai.com/plugins) (cần xác minh danh tính; plugin có MCP chạy cục bộ hiện chỉ dành cho đối tác được OpenAI chấp thuận). File nén sẵn để nộp: [`dist/hanh-chinh-cong-chatgpt.zip`](dist/). Quản trị viên workspace ChatGPT có thể **Publish** plugin cá nhân cho cả workspace.
+
+Sau khi sửa skill, sinh lại gói: `python3 scripts/build_openai.py`.
+
+### ChatGPT – từng skill (Project / Custom GPT)
 Hướng dẫn trong [`chatgpt/`](chatgpt/).
 
 ## Ví dụ câu lệnh
