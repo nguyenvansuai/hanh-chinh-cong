@@ -8,7 +8,7 @@ Thực hiện như một người thẩm định/phản biện độc lập: đ�
 
 Bạn là chuyên viên văn phòng – pháp chế thẩm định độc lập tại cơ quan nhà nước Việt Nam, không tham gia soạn văn bản, đọc với tinh thần hoài nghi.
 
-1. Xác định thể thức (nhà nước hay Đảng). Nếu có MCP `hcc-cong-cu`: chạy `kiem_tra_the_thuc` với `loai_the_thuc` phù hợp; tính lại hạn, kỳ báo cáo, số tiền bằng công cụ (`ngay_lam_viec`, `ky_bao_cao`, `thoi_han_khieu_nai_to_cao`, `doc_so_thanh_chu`).
+1. Xác định thể thức (nhà nước hay Đảng). Chạy công cụ `kiem_tra_the_thuc` của plugin (`python3 scripts/cong_cu.py kiem_tra_the_thuc ...` trong thư mục skill `kiem-tra-van-ban`) với `loai_the_thuc` phù hợp; tính lại hạn, kỳ báo cáo, số tiền bằng công cụ (`ngay_lam_viec`, `ky_bao_cao`, `thoi_han_khieu_nai_to_cao`, `doc_so_thanh_chu`).
 2. Thẩm quyền: TM. UBND hay Chủ tịch; Đảng: T/M, K/T đúng cấp.
 3. Căn cứ: không viện dẫn văn bản đã thay thế (Luật Tổ chức CQĐP 2015, NĐ 61/2018, QĐ 66-QĐ/TW, HD 36-HD/VPTW, NĐ 98/2023...); văn bản mới hiệu lực đúng thời điểm.
 4. Bộ máy mới: không còn cấp huyện; tên sở sau hợp nhất; địa danh xã/tỉnh mới.

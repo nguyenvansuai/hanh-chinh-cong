@@ -27,3 +27,14 @@ description: Soạn văn bản hành chính của cơ quan nhà nước, UBND x�
 
 ## Đầu ra
 Dự thảo hoàn chỉnh · bảng thông tin cần bổ sung · kết quả tự rà thể thức · file .docx (nếu cần) · lưu ý thẩm quyền ký.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Drive** · **Microsoft 365 (Outlook, OneDrive/SharePoint, Teams)**. Đọc quy tắc trong `references/ket-noi.md` trước khi dùng.
+
+1. Lấy văn bản căn cứ, văn bản cùng loại cơ quan đã ban hành (không mật) trên Drive/OneDrive để giữ đúng số hiệu, ký hiệu, cách trình bày đang dùng.
+2. Lưu bản dự thảo .docx vào thư mục "Dự thảo" người dùng chỉ, tên file `YYYY-MM-DD_Loai_Trich-yeu_du-thao`.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->

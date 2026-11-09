@@ -36,7 +36,8 @@
         "brandColor": "#9B1C1C",
         "composerIcon": "./assets/icon.png",
         "logo": "./assets/logo.png"
-      }
+      },
+      "apps": "./.app.json"
     }
   }
 }

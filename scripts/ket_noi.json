@@ -1,0 +1,102 @@
+{
+  "connectors": ["google-calendar", "google-drive", "microsoft-365"],
+  "chung": [
+    "**Không đưa tài liệu mật lên bất kỳ dịch vụ nào**: văn bản có dấu chỉ độ mật (Mật, Tối mật, Tuyệt mật) hoặc thuộc danh mục bí mật nhà nước tuyệt đối không đọc, không lưu lên Drive/OneDrive, không ghi vào lịch. Gặp tài liệu như vậy thì dừng và báo người dùng.",
+    "**Chỉ dùng tài khoản và dịch vụ cơ quan cho phép**: tuân thủ quy chế của cơ quan về sử dụng dịch vụ đám mây, AI. Connector chỉ dùng cho việc cá nhân của cán bộ (lịch họp, tài liệu không mật, bản dự thảo); không thay hệ thống quản lý văn bản và điều hành, không thay thư công vụ.",
+    "**Hồ sơ công dân, đơn thư**: ẩn danh khi không cần thông tin định danh; thông tin người tố cáo luôn bảo mật, không ghi vào tiêu đề sự kiện lịch hay tên file.",
+    "**Lịch công tác của lãnh đạo**: chỉ tạo sự kiện trên lịch người dùng chỉ định, sau khi xác nhận; không mời người ngoài cơ quan khi chưa được yêu cầu."
+  ],
+  "chua_co": [
+    "Hệ thống quản lý văn bản và điều hành (của tỉnh, bộ, ngành): không kết nối – hệ thống nằm trong mạng riêng, yêu cầu an toàn thông tin. Tải văn bản (PDF/Word) không mật về rồi đưa vào chat; sổ CSV của plugin chỉ để đối chiếu, nhắc việc cá nhân.",
+    "Hệ thống thông tin giải quyết TTHC cấp tỉnh, Cổng Dịch vụ công quốc gia: không kết nối. Dán nội dung thủ tục đã công bố, thông tin hồ sơ (ẩn danh nếu không cần).",
+    "Chữ ký số chuyên dùng Chính phủ: không tích hợp – plugin không ký số.",
+    "Thư công vụ: không kết nối; skill soạn nháp để người dùng tự gửi."
+  ],
+  "skills": {
+    "soan-van-ban-nha-nuoc": {
+      "dung": ["google-drive"],
+      "viec": [
+        "Lấy văn bản căn cứ, văn bản cùng loại cơ quan đã ban hành (không mật) trên Drive/OneDrive để giữ đúng số hiệu, ký hiệu, cách trình bày đang dùng.",
+        "Lưu bản dự thảo .docx vào thư mục \"Dự thảo\" người dùng chỉ, tên file `YYYY-MM-DD_Loai_Trich-yeu_du-thao`."
+      ]
+    },
+    "van-ban-dang": {
+      "dung": ["google-drive"],
+      "viec": [
+        "Lấy nghị quyết, báo cáo kỳ trước của chi bộ, đảng ủy (không mật) trên Drive/OneDrive để kế thừa số liệu, chỉ tiêu.",
+        "Lưu dự thảo vào thư mục của cấp ủy người dùng chỉ."
+      ]
+    },
+    "van-ban-quy-pham-phap-luat": {
+      "dung": ["google-drive", "google-calendar"],
+      "viec": [
+        "Gom hồ sơ dự thảo (tờ trình, dự thảo, bảng tổng hợp ý kiến, báo cáo thẩm định) vào một thư mục trên Drive/OneDrive.",
+        "Tạo nhắc mốc quy trình trên lịch: hạn lấy ý kiến, đăng tải, gửi thẩm định, trình kỳ họp HĐND (sau khi xác nhận)."
+      ]
+    },
+    "kiem-tra-van-ban": {
+      "dung": ["google-drive"],
+      "viec": [
+        "Mở file cần kiểm tra từ Drive/OneDrive khi người dùng chỉ tên file.",
+        "Lưu báo cáo kiểm tra thành file mới cạnh file gốc, không sửa file gốc."
+      ]
+    },
+    "van-thu-co-quan": {
+      "dung": ["google-drive", "google-calendar"],
+      "viec": [
+        "Lưu bản điện tử văn bản đi/đến (không mật) theo thư mục năm – sổ trên Drive/OneDrive, tên file có số đến/số đi.",
+        "Văn bản có hạn xử lý: tạo sự kiện nhắc hạn trên lịch người được giao (sau khi xác nhận)."
+      ]
+    },
+    "lap-ho-so-luu-tru": {
+      "dung": ["google-drive"],
+      "viec": [
+        "Đọc cấu trúc thư mục hiện có, đối chiếu danh mục hồ sơ để chỉ ra file đặt sai chỗ, thiếu hồ sơ.",
+        "Tạo cây thư mục theo danh mục hồ sơ năm (sau khi xác nhận); lập danh sách hồ sơ đến hạn nộp lưu, hết thời hạn bảo quản – chỉ lập danh sách, không xóa, không di chuyển."
+      ]
+    },
+    "bao-cao-ke-hoach": {
+      "dung": ["google-drive", "google-calendar"],
+      "viec": [
+        "Lấy báo cáo kỳ trước, số liệu các bộ phận gửi (Sheets/Excel) trên Drive/OneDrive để tổng hợp – không tự thêm số liệu.",
+        "Tạo nhắc trên lịch: ngày chốt số liệu, hạn các bộ phận gửi số liệu, hạn gửi báo cáo cấp trên (tính bằng công cụ `ky_bao_cao`).",
+        "Lưu báo cáo, kế hoạch dự thảo vào Drive/OneDrive."
+      ]
+    },
+    "hop-hoi-nghi-phat-bieu": {
+      "dung": ["google-calendar", "google-drive", "microsoft-365"],
+      "viec": [
+        "Xem lịch công tác để tìm ngày giờ phù hợp cho hội nghị; tạo sự kiện kèm chương trình, địa điểm hoặc link họp trực tuyến (Teams) sau khi xác nhận.",
+        "Gom tài liệu hội nghị vào một thư mục; lưu kịch bản, bài phát biểu, biên bản, thông báo kết luận vào Drive/OneDrive.",
+        "Họp trên Teams có bản ghi chữ: dùng để đối chiếu khi làm biên bản – chỉ ghi điều có trong bản ghi."
+      ]
+    },
+    "mot-cua-tthc": {
+      "dung": ["google-calendar"],
+      "viec": [
+        "Hồ sơ cần theo dõi riêng: tạo nhắc ngày hẹn trả kết quả trên lịch cá nhân (tiêu đề chỉ ghi mã hồ sơ, không ghi họ tên, CCCD công dân)."
+      ]
+    },
+    "tiep-dan-khieu-nai-to-cao": {
+      "dung": ["google-calendar", "google-drive"],
+      "viec": [
+        "Tạo nhắc mốc thời hạn: thụ lý, giải quyết, gia hạn (tính bằng công cụ) trên lịch người được giao – tiêu đề chỉ ghi số đơn, không ghi tên người khiếu nại, tố cáo.",
+        "Lưu dự thảo thông báo thụ lý, quyết định, kết luận vào thư mục có giới hạn quyền; hồ sơ tố cáo không lưu lên dịch vụ đám mây nếu quy chế cơ quan không cho phép."
+      ]
+    },
+    "danh-gia-can-bo": {
+      "dung": ["google-drive", "google-calendar"],
+      "viec": [
+        "Lấy chương trình công tác, báo cáo, sản phẩm đã làm trong năm trên Drive/OneDrive làm minh chứng cho bản tự đánh giá – chỉ dùng sản phẩm thực có.",
+        "Tạo nhắc hạn nộp bản tự đánh giá, hạn họp kiểm điểm trên lịch."
+      ]
+    },
+    "thi-dua-khen-thuong": {
+      "dung": ["google-drive", "google-calendar"],
+      "viec": [
+        "Gom hồ sơ đề nghị khen thưởng (báo cáo thành tích, biên bản họp hội đồng, minh chứng) vào một thư mục trên Drive/OneDrive.",
+        "Tạo nhắc mốc: hạn đăng ký thi đua, hạn các đơn vị gửi hồ sơ, ngày họp hội đồng thi đua."
+      ]
+    }
+  }
+}

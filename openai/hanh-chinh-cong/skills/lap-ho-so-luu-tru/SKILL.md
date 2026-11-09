@@ -34,3 +34,14 @@ Quét ≥ 300 dpi, PDF/A, đặt tên file theo mã hồ sơ, đối chiếu s�
 
 ## Đầu ra
 Danh mục hồ sơ năm (bảng/Excel) · mục lục văn bản · mục lục hồ sơ nộp lưu · biên bản giao nhận · hồ sơ tiêu hủy nháp – mọi thời hạn chưa tra được gắn [Cần kiểm tra].
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Drive** · **Microsoft 365 (Outlook, OneDrive/SharePoint, Teams)**. Đọc quy tắc trong `references/ket-noi.md` trước khi dùng.
+
+1. Đọc cấu trúc thư mục hiện có, đối chiếu danh mục hồ sơ để chỉ ra file đặt sai chỗ, thiếu hồ sơ.
+2. Tạo cây thư mục theo danh mục hồ sơ năm (sau khi xác nhận); lập danh sách hồ sơ đến hạn nộp lưu, hết thời hạn bảo quản – chỉ lập danh sách, không xóa, không di chuyển.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->

@@ -39,3 +39,14 @@ Giúp đơn vị xây danh mục sản phẩm/KPI theo vị trí việc làm: `N
 
 ## Đầu ra
 Bản tự đánh giá / nhận xét / biên bản / bản kiểm điểm cá nhân / báo cáo kiểm điểm tập thể / bảng KPI – dự thảo, kèm điểm cần đối chiếu hướng dẫn năm đánh giá.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Drive** · **Google Calendar** · **Microsoft 365 (Outlook, OneDrive/SharePoint, Teams)**. Đọc quy tắc trong `references/ket-noi.md` trước khi dùng.
+
+1. Lấy chương trình công tác, báo cáo, sản phẩm đã làm trong năm trên Drive/OneDrive làm minh chứng cho bản tự đánh giá – chỉ dùng sản phẩm thực có.
+2. Tạo nhắc hạn nộp bản tự đánh giá, hạn họp kiểm điểm trên lịch.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->

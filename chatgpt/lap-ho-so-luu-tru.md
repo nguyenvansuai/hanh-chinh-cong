@@ -6,7 +6,7 @@
 1. ChatGPT → Explore GPTs → Create → tab Configure (hoặc tạo Project, mở Project instructions).
 2. Name: `lap-ho-so-luu-tru`. Description: chép dòng Mô tả ở trên.
 3. Dán khối **Instructions** bên dưới vào ô Instructions.
-4. Knowledge: tải lên `skills/lap-ho-so-luu-tru/references/nguyen-tac-chung.md`, `skills/lap-ho-so-luu-tru/references/quy-dinh-cong-vu-2026.md`, `skills/lap-ho-so-luu-tru/references/the-thuc-nd30.md`.
+4. Knowledge: tải lên `skills/lap-ho-so-luu-tru/references/ket-noi.md`, `skills/lap-ho-so-luu-tru/references/nguyen-tac-chung.md`, `skills/lap-ho-so-luu-tru/references/quy-dinh-cong-vu-2026.md`, `skills/lap-ho-so-luu-tru/references/the-thuc-nd30.md`.
 5. Bật **Code Interpreter & Data Analysis**, nén thư mục `skills/lap-ho-so-luu-tru/scripts/` thành zip và tải lên Knowledge.
 
 ## Instructions
@@ -45,4 +45,15 @@ Quét ≥ 300 dpi, PDF/A, đặt tên file theo mã hồ sơ, đối chiếu s�
 
 ## Đầu ra
 Danh mục hồ sơ năm (bảng/Excel) · mục lục văn bản · mục lục hồ sơ nộp lưu · biên bản giao nhận · hồ sơ tiêu hủy nháp – mọi thời hạn chưa tra được gắn [Cần kiểm tra].
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Drive** · **Microsoft 365 (Outlook, OneDrive/SharePoint, Teams)**. Đọc quy tắc trong `file Knowledge ket-noi.md` trước khi dùng.
+
+1. Đọc cấu trúc thư mục hiện có, đối chiếu danh mục hồ sơ để chỉ ra file đặt sai chỗ, thiếu hồ sơ.
+2. Tạo cây thư mục theo danh mục hồ sơ năm (sau khi xác nhận); lập danh sách hồ sơ đến hạn nộp lưu, hết thời hạn bảo quản – chỉ lập danh sách, không xóa, không di chuyển.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->
 ````

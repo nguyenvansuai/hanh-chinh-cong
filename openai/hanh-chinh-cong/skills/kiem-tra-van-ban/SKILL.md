@@ -27,3 +27,14 @@ description: Kiểm tra văn bản trước khi trình ký hoặc phát hành t�
 
 ## Đầu ra
 Kết luận + bảng lỗi + điểm không kiểm tra được + (nếu yêu cầu) bản sửa có đánh dấu.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Drive** · **Microsoft 365 (Outlook, OneDrive/SharePoint, Teams)**. Đọc quy tắc trong `references/ket-noi.md` trước khi dùng.
+
+1. Mở file cần kiểm tra từ Drive/OneDrive khi người dùng chỉ tên file.
+2. Lưu báo cáo kiểm tra thành file mới cạnh file gốc, không sửa file gốc.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->

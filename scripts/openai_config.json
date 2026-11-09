@@ -14,16 +14,6 @@
     "van-ban-dang",
     "viet-nam"
   ],
-  "mcp": {
-    "name": "hcc-cong-cu",
-    "args": [
-      "${PLUGIN_ROOT}/mcp/server.py"
-    ],
-    "thu_muc_kem": [
-      "mcp",
-      "tools"
-    ]
-  },
   "repository": "https://github.com/nguyenvansuai/hanh-chinh-cong",
   "category": "Productivity"
 }

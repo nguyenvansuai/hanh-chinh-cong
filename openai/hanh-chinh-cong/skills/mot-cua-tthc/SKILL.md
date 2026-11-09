@@ -31,3 +31,13 @@ Xưng hô "Ông/Bà" (văn bản), "anh/chị/cô/chú" phù hợp khi giao ti�
 
 ## Đầu ra
 Phiếu hướng dẫn · giấy hẹn (ngày hẹn đã tính) · phiếu yêu cầu bổ sung · phiếu từ chối · văn bản xin lỗi hẹn lại · bảng theo dõi hồ sơ · câu trả lời công dân (nháp).
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Calendar** · **Microsoft 365 (Outlook, OneDrive/SharePoint, Teams)**. Đọc quy tắc trong `references/ket-noi.md` trước khi dùng.
+
+1. Hồ sơ cần theo dõi riêng: tạo nhắc ngày hẹn trả kết quả trên lịch cá nhân (tiêu đề chỉ ghi mã hồ sơ, không ghi họ tên, CCCD công dân).
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->

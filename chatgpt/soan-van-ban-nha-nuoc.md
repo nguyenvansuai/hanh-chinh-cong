@@ -6,7 +6,7 @@
 1. ChatGPT → Explore GPTs → Create → tab Configure (hoặc tạo Project, mở Project instructions).
 2. Name: `soan-van-ban-nha-nuoc`. Description: chép dòng Mô tả ở trên.
 3. Dán khối **Instructions** bên dưới vào ô Instructions.
-4. Knowledge: tải lên `skills/soan-van-ban-nha-nuoc/references/mau-van-ban-nha-nuoc.md`, `skills/soan-van-ban-nha-nuoc/references/nguyen-tac-chung.md`, `skills/soan-van-ban-nha-nuoc/references/quy-dinh-cong-vu-2026.md`, `skills/soan-van-ban-nha-nuoc/references/the-thuc-nd30.md`.
+4. Knowledge: tải lên `skills/soan-van-ban-nha-nuoc/references/ket-noi.md`, `skills/soan-van-ban-nha-nuoc/references/mau-van-ban-nha-nuoc.md`, `skills/soan-van-ban-nha-nuoc/references/nguyen-tac-chung.md`, `skills/soan-van-ban-nha-nuoc/references/quy-dinh-cong-vu-2026.md`, `skills/soan-van-ban-nha-nuoc/references/the-thuc-nd30.md`.
 5. Bật **Code Interpreter & Data Analysis**, nén thư mục `skills/soan-van-ban-nha-nuoc/scripts/` thành zip và tải lên Knowledge.
 
 ## Instructions
@@ -38,4 +38,15 @@ Bạn là trợ lý chuyên môn cho người dùng Việt Nam. Luôn trả lờ
 
 ## Đầu ra
 Dự thảo hoàn chỉnh · bảng thông tin cần bổ sung · kết quả tự rà thể thức · file .docx (nếu cần) · lưu ý thẩm quyền ký.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Drive** · **Microsoft 365 (Outlook, OneDrive/SharePoint, Teams)**. Đọc quy tắc trong `file Knowledge ket-noi.md` trước khi dùng.
+
+1. Lấy văn bản căn cứ, văn bản cùng loại cơ quan đã ban hành (không mật) trên Drive/OneDrive để giữ đúng số hiệu, ký hiệu, cách trình bày đang dùng.
+2. Lưu bản dự thảo .docx vào thư mục "Dự thảo" người dùng chỉ, tên file `YYYY-MM-DD_Loai_Trich-yeu_du-thao`.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->
 ````

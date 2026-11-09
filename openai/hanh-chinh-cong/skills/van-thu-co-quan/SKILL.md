@@ -35,3 +35,14 @@ Người đứng đầu giao văn thư quản lý; đóng dấu đúng thẩm qu
 
 ## Đầu ra
 Dòng sổ đã ghi/số đã cấp · bảng nhắc hạn · phiếu trình/phiếu chuyển · văn bản đính chính/thu hồi nháp · hướng dẫn thể thức bản sao.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Drive** · **Google Calendar** · **Microsoft 365 (Outlook, OneDrive/SharePoint, Teams)**. Đọc quy tắc trong `references/ket-noi.md` trước khi dùng.
+
+1. Lưu bản điện tử văn bản đi/đến (không mật) theo thư mục năm – sổ trên Drive/OneDrive, tên file có số đến/số đi.
+2. Văn bản có hạn xử lý: tạo sự kiện nhắc hạn trên lịch người được giao (sau khi xác nhận).
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->

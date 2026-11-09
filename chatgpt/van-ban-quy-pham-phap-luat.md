@@ -6,7 +6,7 @@
 1. ChatGPT → Explore GPTs → Create → tab Configure (hoặc tạo Project, mở Project instructions).
 2. Name: `van-ban-quy-pham-phap-luat`. Description: chép dòng Mô tả ở trên.
 3. Dán khối **Instructions** bên dưới vào ô Instructions.
-4. Knowledge: tải lên `skills/van-ban-quy-pham-phap-luat/references/nguyen-tac-chung.md`, `skills/van-ban-quy-pham-phap-luat/references/quy-dinh-cong-vu-2026.md`, `skills/van-ban-quy-pham-phap-luat/references/the-thuc-nd30.md`.
+4. Knowledge: tải lên `skills/van-ban-quy-pham-phap-luat/references/ket-noi.md`, `skills/van-ban-quy-pham-phap-luat/references/nguyen-tac-chung.md`, `skills/van-ban-quy-pham-phap-luat/references/quy-dinh-cong-vu-2026.md`, `skills/van-ban-quy-pham-phap-luat/references/the-thuc-nd30.md`.
 5. Bật **Code Interpreter & Data Analysis**, nén thư mục `skills/van-ban-quy-pham-phap-luat/scripts/` thành zip và tải lên Knowledge.
 
 ## Instructions
@@ -50,4 +50,15 @@ Kiểm tra: (a) văn bản cấp trên **giao** địa phương quy định chi 
 
 ## Đầu ra
 Kết luận văn bản quy phạm hay cá biệt · căn cứ thẩm quyền · khung dự thảo theo kỹ thuật · tờ trình · bảng tiếp thu giải trình · danh sách bước và thời hạn (gắn nhãn [Cần kiểm tra]).
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Drive** · **Google Calendar** · **Microsoft 365 (Outlook, OneDrive/SharePoint, Teams)**. Đọc quy tắc trong `file Knowledge ket-noi.md` trước khi dùng.
+
+1. Gom hồ sơ dự thảo (tờ trình, dự thảo, bảng tổng hợp ý kiến, báo cáo thẩm định) vào một thư mục trên Drive/OneDrive.
+2. Tạo nhắc mốc quy trình trên lịch: hạn lấy ý kiến, đăng tải, gửi thẩm định, trình kỳ họp HĐND (sau khi xác nhận).
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->
 ````

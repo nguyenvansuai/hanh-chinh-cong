@@ -27,3 +27,15 @@ description: Soạn báo cáo và kế hoạch cho cơ quan nhà nước, đản
 
 ## Đầu ra
 Báo cáo/kế hoạch dự thảo · bảng số liệu tổng hợp (có công thức nếu xuất Excel) · danh sách số liệu còn thiếu và đơn vị chưa gửi · kỳ chốt số liệu và hạn gửi · lịch nhắc.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Drive** · **Google Calendar** · **Microsoft 365 (Outlook, OneDrive/SharePoint, Teams)**. Đọc quy tắc trong `references/ket-noi.md` trước khi dùng.
+
+1. Lấy báo cáo kỳ trước, số liệu các bộ phận gửi (Sheets/Excel) trên Drive/OneDrive để tổng hợp – không tự thêm số liệu.
+2. Tạo nhắc trên lịch: ngày chốt số liệu, hạn các bộ phận gửi số liệu, hạn gửi báo cáo cấp trên (tính bằng công cụ `ky_bao_cao`).
+3. Lưu báo cáo, kế hoạch dự thảo vào Drive/OneDrive.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->

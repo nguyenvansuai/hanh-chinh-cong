@@ -1,6 +1,6 @@
 # Plugin Hành chính công cho cán bộ, công chức, viên chức Việt Nam 2026
 
-Plugin trọn bộ cho **cán bộ, công chức, viên chức, văn thư cơ quan nhà nước, UBND xã/phường/đặc khu, sở ngành, đơn vị sự nghiệp và văn phòng cấp ủy** trong mô hình **chính quyền địa phương 2 cấp** (từ 01/7/2025). Gồm **12 skill**, **6 lệnh quy trình**, **1 agent thẩm định** và **1 connector MCP** với 15 công cụ, cập nhật các thay đổi lớn 2025–2026:
+Plugin trọn bộ cho **cán bộ, công chức, viên chức, văn thư cơ quan nhà nước, UBND xã/phường/đặc khu, sở ngành, đơn vị sự nghiệp và văn phòng cấp ủy** trong mô hình **chính quyền địa phương 2 cấp** (từ 01/7/2025). Gồm **12 skill**, **6 lệnh quy trình**, **1 agent thẩm định**, **connector khai báo sẵn** (Google Calendar, Google Drive, Microsoft 365) và 15 công cụ tính toán đi kèm skill, cập nhật các thay đổi lớn 2025–2026:
 
 - Văn bản hành chính: **Nghị định 30/2020/NĐ-CP** (còn hiệu lực).
 - Văn bản Đảng: **Quy định 399-QĐ/TW** (09/01/2026) và **Hướng dẫn 05-HD/VPTW** (27/5/2026) – thay QĐ 66 và HD 36.
@@ -37,7 +37,11 @@ Nguyên tắc: **không bịa số liệu, căn cứ**, **đúng thẩm quyền 
 `tham-dinh-van-ban` – thẩm định độc lập văn bản quan trọng trước khi trình ký.
 
 ### Connector
-MCP `hcc-cong-cu` chạy trên máy (Python 3.8+), không kết nối hệ thống công vụ – xem [CONNECTORS.md](CONNECTORS.md).
+<!-- KET-NOI-README:BAT-DAU (sinh tự động bởi scripts/ket_noi.py) -->
+Plugin **khai báo sẵn** connector: Google Calendar, Google Drive, Microsoft 365 (Outlook, OneDrive/SharePoint, Teams). Cài plugin xong chỉ cần bấm kết nối và đăng nhập một lần (tab **Connectors** của plugin). Mỗi skill ghi rõ dùng connector vào việc gì; chưa kết nối thì skill vẫn chạy, chỉ không tự lấy dữ liệu hoặc tạo nháp được. Email chỉ tạo bản nháp, mọi thao tác ghi phải được bạn xác nhận. Chi tiết: [CONNECTORS.md](CONNECTORS.md).
+<!-- KET-NOI-README:KET-THUC -->
+
+Dùng cho việc cá nhân của cán bộ: lịch họp, nhắc hạn xử lý văn bản, hạn giải quyết đơn, kỳ chốt số liệu; lưu bản dự thảo và tài liệu **không mật**. Plugin **không** kết nối hệ thống quản lý văn bản, cổng dịch vụ công, thư công vụ.
 
 ## Cài đặt
 
@@ -60,14 +64,14 @@ MCP `hcc-cong-cu` chạy trên máy (Python 3.8+), không kết nối hệ thố
 Cập nhật: `/plugin marketplace update hanh-chinh-cong`
 
 ### Claude Desktop / Cowork
-Cài từ file [`dist/hanh-chinh-cong.plugin`](dist/).
+Cài từ file [`dist/hanh-chinh-cong.plugin`](dist/) (gồm skill, lệnh, agent và connector khai báo sẵn), rồi mở tab **Connectors** của plugin để kết nối.
 
 ### Claude.ai – từng skill
 **Settings → Capabilities**: bật Code execution; **Skills → Upload skill** với file zip trong [`dist/`](dist/) (ví dụ `van-ban-dang.zip`).
 
 ### ChatGPT / Codex – cả bộ plugin (OpenAI)
 
-Gói plugin cho ChatGPT và Codex nằm ở [`openai/hanh-chinh-cong/`](openai/hanh-chinh-cong/), theo cấu trúc portable của OpenAI (`plugin.json`, `skills/`, `mcp.json`), gồm **19 skill** (lệnh quy trình và agent của bản Claude đã được chuyển thành skill).
+Gói plugin cho ChatGPT và Codex nằm ở [`openai/hanh-chinh-cong/`](openai/hanh-chinh-cong/), theo cấu trúc portable của OpenAI (`plugin.json`, `skills/`, `.app.json`), gồm **19 skill** (lệnh quy trình và agent của bản Claude đã được chuyển thành skill).
 
 **ChatGPT desktop / Codex** – cài cá nhân, không cần OpenAI duyệt:
 
@@ -81,9 +85,9 @@ codex plugin add hanh-chinh-cong@hanh-chinh-cong
 
 Hoặc trong ứng dụng ChatGPT desktop: **Plugins** → chọn nguồn **Hành chính công VN** → **Install**. Khi dùng: mở chat chế độ **Work**, gõ `@` và chọn plugin.
 
-Gói kèm MCP server chạy trên máy (cần Python 3.8+) nên thuộc loại **chỉ dùng trên desktop**. Skill vẫn tự tính bằng `scripts/cong_cu.py` khi không có MCP.
+Gói khai báo sẵn connector của ChatGPT trong `.app.json` (danh sách ở [CONNECTORS.md](CONNECTORS.md)): khi cài, ChatGPT đề nghị kết nối từng ứng dụng, mỗi người đăng nhập một lần. Không cần cài Python hay chạy server trên máy.
 
-**ChatGPT web / chia sẻ rộng**: muốn plugin xuất hiện trong thư mục plugin chung của ChatGPT phải gửi OpenAI duyệt qua [cổng nộp plugin](https://platform.openai.com/plugins) (cần xác minh danh tính; plugin có MCP chạy cục bộ hiện chỉ dành cho đối tác được OpenAI chấp thuận). File nén sẵn để nộp: [`dist/hanh-chinh-cong-chatgpt.zip`](dist/). Quản trị viên workspace ChatGPT có thể **Publish** plugin cá nhân cho cả workspace.
+**ChatGPT web / chia sẻ rộng**: muốn plugin xuất hiện trong thư mục plugin chung của ChatGPT phải gửi OpenAI duyệt qua [cổng nộp plugin](https://platform.openai.com/plugins) (cần xác minh danh tính). File nén sẵn để nộp: [`dist/hanh-chinh-cong-chatgpt.zip`](dist/). Quản trị viên workspace ChatGPT có thể **Publish** plugin cá nhân cho cả workspace.
 
 Sau khi sửa skill, sinh lại gói: `python3 scripts/build_openai.py`.
 

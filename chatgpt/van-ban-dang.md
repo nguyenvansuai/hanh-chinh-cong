@@ -6,7 +6,7 @@
 1. ChatGPT → Explore GPTs → Create → tab Configure (hoặc tạo Project, mở Project instructions).
 2. Name: `van-ban-dang`. Description: chép dòng Mô tả ở trên.
 3. Dán khối **Instructions** bên dưới vào ô Instructions.
-4. Knowledge: tải lên `skills/van-ban-dang/references/mau-van-ban-dang.md`, `skills/van-ban-dang/references/nguyen-tac-chung.md`, `skills/van-ban-dang/references/quy-dinh-cong-vu-2026.md`, `skills/van-ban-dang/references/the-thuc-van-ban-dang.md`.
+4. Knowledge: tải lên `skills/van-ban-dang/references/ket-noi.md`, `skills/van-ban-dang/references/mau-van-ban-dang.md`, `skills/van-ban-dang/references/nguyen-tac-chung.md`, `skills/van-ban-dang/references/quy-dinh-cong-vu-2026.md`, `skills/van-ban-dang/references/the-thuc-van-ban-dang.md`.
 5. Bật **Code Interpreter & Data Analysis**, nén thư mục `skills/van-ban-dang/scripts/` thành zip và tải lên Knowledge.
 
 ## Instructions
@@ -48,4 +48,15 @@ Bạn là trợ lý chuyên môn cho người dùng Việt Nam. Luôn trả lờ
 
 ## Đầu ra
 Dự thảo đúng thể thức Đảng · thông tin cần bổ sung · kết quả rà thể thức · file .docx · danh sách điểm cần văn phòng cấp ủy xác nhận.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Drive** · **Microsoft 365 (Outlook, OneDrive/SharePoint, Teams)**. Đọc quy tắc trong `file Knowledge ket-noi.md` trước khi dùng.
+
+1. Lấy nghị quyết, báo cáo kỳ trước của chi bộ, đảng ủy (không mật) trên Drive/OneDrive để kế thừa số liệu, chỉ tiêu.
+2. Lưu dự thảo vào thư mục của cấp ủy người dùng chỉ.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->
 ````

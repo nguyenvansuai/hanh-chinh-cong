@@ -32,3 +32,14 @@ Nguyên tắc viết: **số liệu thật, minh chứng có số quyết địn
 
 ## Đầu ra
 Kế hoạch/quy chế · bảng đối chiếu tiêu chuẩn · hồ sơ đề nghị (tờ trình, biên bản, báo cáo thành tích, trích ngang) · quyết định khen thưởng – dự thảo, kèm danh sách điểm cần đối chiếu NĐ 152/2025 và quy định của tỉnh.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Drive** · **Google Calendar** · **Microsoft 365 (Outlook, OneDrive/SharePoint, Teams)**. Đọc quy tắc trong `references/ket-noi.md` trước khi dùng.
+
+1. Gom hồ sơ đề nghị khen thưởng (báo cáo thành tích, biên bản họp hội đồng, minh chứng) vào một thư mục trên Drive/OneDrive.
+2. Tạo nhắc mốc: hạn đăng ký thi đua, hạn các đơn vị gửi hồ sơ, ngày họp hội đồng thi đua.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->

@@ -36,3 +36,14 @@ Lịch tiếp định kỳ của người đứng đầu (Chủ tịch UBND cấ
 
 ## Đầu ra
 Phân loại + hướng xử lý từng đơn · thẩm quyền (có nhãn) · lịch thời hạn · văn bản nháp (phiếu chuyển, hướng dẫn, thông báo thụ lý, biên bản, quyết định, kết luận) · lưu ý bảo mật.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Calendar** · **Google Drive** · **Microsoft 365 (Outlook, OneDrive/SharePoint, Teams)**. Đọc quy tắc trong `references/ket-noi.md` trước khi dùng.
+
+1. Tạo nhắc mốc thời hạn: thụ lý, giải quyết, gia hạn (tính bằng công cụ) trên lịch người được giao – tiêu đề chỉ ghi số đơn, không ghi tên người khiếu nại, tố cáo.
+2. Lưu dự thảo thông báo thụ lý, quyết định, kết luận vào thư mục có giới hạn quyền; hồ sơ tố cáo không lưu lên dịch vụ đám mây nếu quy chế cơ quan không cho phép.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->

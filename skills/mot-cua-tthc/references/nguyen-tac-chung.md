@@ -20,7 +20,9 @@ Số hiệu văn bản, tên người, chức vụ, số liệu báo cáo, chỉ
 - Rà tự động bằng `kiem_tra_the_thuc` (`loai_the_thuc` = `nha_nuoc` hoặc `dang`) trước khi giao.
 
 ## 4. Tính bằng công cụ
-| Việc | Công cụ (MCP `hcc-cong-cu`) |
+Chạy công cụ đi kèm skill: `python3 scripts/cong_cu.py <tên> tham_so=giá_trị`.
+
+| Việc | Công cụ |
 |---|---|
 | Hạn giải quyết TTHC, hạn xử lý văn bản | `han_giai_quyet_tthc`, `ngay_lam_viec` |
 | Hạn khiếu nại, tố cáo | `thoi_han_khieu_nai_to_cao` |
@@ -30,7 +32,6 @@ Số hiệu văn bản, tên người, chức vụ, số liệu báo cáo, chỉ
 | Ngày lễ, âm lịch, cộng ngày | `ngay_le_tet`, `doi_lich_am_duong`, `cong_ngay_lich` |
 | Số tiền bằng chữ | `doc_so_thanh_chu` |
 | Lịch nhắc | `tao_file_ics` |
-Không có MCP: `python3 scripts/cong_cu.py <tên> tham_so=giá_trị`.
 
 ## 5. Nhãn tin cậy
 **[Chắc chắn]** đã đối chiếu, ổn định · **[Cần kiểm tra]** văn bản mới, chưa đọc bản gốc, hoặc địa phương có thể quy định riêng. Bảng văn bản: `references/quy-dinh-cong-vu-2026.md`.

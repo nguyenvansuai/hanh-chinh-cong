@@ -26,3 +26,15 @@ description: Tổ chức cuộc họp, hội nghị trong cơ quan nhà nước 
 
 ## Đầu ra
 Chương trình + kịch bản điều hành · biên bản · thông báo kết luận (có bảng giao việc) · bài phát biểu đúng thời lượng (ghi số chữ, thời gian đọc ước tính) · danh sách thông tin cần xác nhận (thứ tự đại biểu, số liệu, mốc lịch sử).
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Calendar** · **Google Drive** · **Microsoft 365 (Outlook, OneDrive/SharePoint, Teams)**. Đọc quy tắc trong `references/ket-noi.md` trước khi dùng.
+
+1. Xem lịch công tác để tìm ngày giờ phù hợp cho hội nghị; tạo sự kiện kèm chương trình, địa điểm hoặc link họp trực tuyến (Teams) sau khi xác nhận.
+2. Gom tài liệu hội nghị vào một thư mục; lưu kịch bản, bài phát biểu, biên bản, thông báo kết luận vào Drive/OneDrive.
+3. Họp trên Teams có bản ghi chữ: dùng để đối chiếu khi làm biên bản – chỉ ghi điều có trong bản ghi.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->
