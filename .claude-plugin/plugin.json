@@ -1,7 +1,7 @@
 {
   "name": "hanh-chinh-cong",
   "version": "1.0.0",
-  "description": "Plugin Hành chính công cho cán bộ, công chức, viên chức Việt Nam 2026 (chính quyền 2 cấp): văn bản hành chính đúng NĐ 30/2020, văn bản Đảng theo Quy định 399-QĐ/TW và Hướng dẫn 05-HD/VPTW, văn bản quy phạm pháp luật cấp xã/tỉnh, kiểm tra thể thức, văn thư – văn bản điện tử, lập hồ sơ lưu trữ, báo cáo – kế hoạch theo kỳ NĐ 09/2019, một cửa theo NĐ 118/2025, tiếp công dân – khiếu nại – tố cáo (sửa đổi 2025), đánh giá cán bộ – kiểm điểm đảng viên, thi đua khen thưởng NĐ 152/2025, hội nghị – bài phát biểu. Khai báo sẵn connector Google Calendar, Google Drive, Microsoft 365 (chỉ cho tài liệu không mật); kèm công cụ tính: hạn TTHC, hạn khiếu nại tố cáo, kỳ báo cáo, sổ văn bản chính quyền/Đảng, tạo – kiểm tra .docx.",
+  "description": "Plugin Hành chính công cho cán bộ, công chức, viên chức Việt Nam 2026 (chính quyền 2 cấp): văn bản hành chính NĐ 30/2020, văn bản Đảng QĐ 399, văn bản quy phạm, kiểm tra văn bản, văn thư – lưu trữ, báo cáo – kế hoạch, hội nghị – phát biểu, một cửa NĐ 118/2025, tiếp dân – khiếu nại – tố cáo, đánh giá cán bộ, thi đua khen thưởng NĐ 152/2025. Có sẵn connector Calendar, Drive, Microsoft 365 (tài liệu không mật) và công cụ tính hạn TTHC, hạn khiếu nại, kỳ báo cáo.",
   "author": {
     "name": "nguyenvansuai",
     "url": "https://github.com/nguyenvansuai"
